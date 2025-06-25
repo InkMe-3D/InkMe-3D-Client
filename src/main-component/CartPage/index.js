@@ -36,7 +36,7 @@ const CartPage = () => {
       setShowUploadButton(true);
       console.log('User came from external website:', referrer);
     }
-  }, []);
+  }, [fetchCartData]);
 
   const fetchCartData = () => {
 

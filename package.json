@@ -1,8 +1,12 @@
 {
-  "name": "prinoz",
+  "name": "inkme-react",
   "version": "0.1.0",
-  "homepage": "http://prinoz-react.wpolive.com",
-  "private": true,
+  "homepage": "http://inkme3d.com",
+  "author": "Inkme3D",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
