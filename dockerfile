@@ -4,13 +4,13 @@ FROM node:18-alpine as builder
 WORKDIR /app
 COPY . .
 
-RUN yarn install
-RUN yarn build
+RUN npm install
+RUN npm run build
 
 # Serve stage
 FROM node:18-alpine
 
-RUN yarn global add serve
+RUN npm install -g serve
 
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
