@@ -1,15 +1,19 @@
-# Build stage
+# Build Stage
 FROM node:18-alpine as builder
 
 WORKDIR /app
 COPY . .
 
+# Cài đặt phụ thuộc
 RUN npm install
+
+# Build project
 RUN npm run build
 
 # Serve stage
 FROM node:18-alpine
 
+# Cài serve
 RUN npm install -g serve
 
 WORKDIR /app
