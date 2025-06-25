@@ -1,7 +1,7 @@
 import axios from "axios";
 // require('dotenv/config');
 
-export const baseUrl = "http://localhost:4000";
+export const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export const fetchDataFromApi = async (url) => {
     try {
