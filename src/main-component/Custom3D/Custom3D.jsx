@@ -14,7 +14,7 @@ const Custom3D = () => {
             background: 'transparent'
         }}>
             <iframe
-                src={`http://127.0.0.1:3000/3dpage/index.html?userId=${userId}`}
+                src={`https://inkme-3d-page-custom-production.up.railway.app?userId=${userId}`}
                 width="100%"
                 height="100%"
                 style={{
